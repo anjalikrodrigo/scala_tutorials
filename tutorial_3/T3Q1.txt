@@ -1,0 +1,5 @@
+def area(radius:Int):Double=3.1415*radius*radius;
+//def area(radius: Int): Double
+
+area(5);
+//val res0: Double = 78.53750000000001
