@@ -1,5 +1,0 @@
-def wCost(noCopies:Int):Double=(24.95*0.6)*noCopies+(noCopies-50)*0.75+3;
-//def wCost(noCopies: Int): Double
-
-wCost(60);
-//val res4: Double = 908.6999999999999
