@@ -1,0 +1,5 @@
+def time(easyKMno:Int, tempoKMno:Int): Int=8*easyKMno+7*tempoKMno;
+//def time(easyKMno: Int, tempoKMno: Int): Int
+
+time(4,3);
+//val res5: Int = 53
