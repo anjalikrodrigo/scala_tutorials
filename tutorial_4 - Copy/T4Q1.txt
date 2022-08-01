@@ -1,0 +1,14 @@
+def actInt(DA:Int):Double=if(DA<=20000)DA*0.02 else if(DA<=200000)DA*0.04 else if(DA<=2000000)DA*0.035 else DA*0.065;
+//def actInt(DA: Int): Double
+
+actInt(20000)
+//val res0: Double = 400.0
+
+actInt(200000)
+//val res1: Double = 8000.0
+
+scala> actInt(2000000)
+//val res2: Double = 70000.0
+
+actInt(20000000)
+//val res3: Double = 1300000.0

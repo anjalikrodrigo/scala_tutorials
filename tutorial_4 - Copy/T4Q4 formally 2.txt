@@ -1,0 +1,28 @@
+class cartItm(var name:String, var price:Double, var quantity:Int);
+// defined class cartItm
+
+var nList:Array[cartItm]= new Array[cartItm](3);
+//var nList: Array[cartItm] = Array(null, null, null)
+
+nList(0) = new cartItm("vanilla_ice_cream", 3.99, 13);
+
+nList(1) = new cartItm("chocolate_biscuits", 4, 6);
+
+nList(2) = new cartItm("cupcakes", 7.77, 7);
+
+def printAll()=for(a <- 0 to 3){printf("%d %s at Rs %f each\n", nList(a).quantity, nList(a).name, nList(a).price)}
+//def printAll(): Unit
+
+printAll();
+//13 vanilla_ice_cream at Rs 3.990000 each
+//6 chocolate_biscuits at Rs 4.000000 each
+//7 cupcakes at Rs 7.770000 each
+
+def printSome()=for(a <- 0 to 3){if(nList(a).name=="vanilla_ice_cream"){printf("%d %s at Rs %f each\n", nList(a).quantity, nList(a).name, nList
+(a).price)}else{printf("Found another item\n")}};
+//def printSome(): Unit
+
+printSome();
+//13 vanilla_ice_cream at Rs 3.990000 each
+//Found another item
+//Found another item
