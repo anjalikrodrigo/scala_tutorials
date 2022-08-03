@@ -1,0 +1,20 @@
+def toUpper(name:String):String={name.toUpperCase()}
+//def toUpper(name: String): String
+
+def toLower(name:String):String={name.toLowerCase()}
+//def toLower(name: String): String
+
+def formatNames(name:String)(func:String=>String):String={func(name)}
+//def formatNames(name: String)(func: String => String): String
+
+println(formatNames("Benny")(toUpper(_)));
+//BENNY
+
+println(formatNames("Niroshan")(toLower(_)));
+//niroshan
+
+println(formatNames("SamAN")(toLower(_)));
+//saman
+
+println(formatNames("KumarA")(toUpper(_)));
+//KUMARA
