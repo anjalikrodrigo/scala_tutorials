@@ -1,0 +1,27 @@
+object fibonacci extends App{
+    import scala.util.control.Breaks._
+
+    val a = scala.io.StdIn.readLine("Input a sentence: ")
+    var n = 1;      //shift
+    var length = a.length()
+
+    //printf("\n%s - %d\n", a, length);
+
+    def encrypt(n:Int, a:String):String={
+        val str = (a.map(c => if(c=='z'||c=='Z') (c - 26 + n).toChar else (c + n).toChar))
+        println(str)
+        return str
+    }
+
+    def decrypt(n:Int, a:String):String= {
+        val str = (a.map(c => if(c=='a'||c=='A') (c + 26 - n).toChar else (c - n).toChar))
+        println(str)
+        return str
+    }
+
+    //def cipher(n:Int):String= {}
+
+    val b = encrypt(n, a)
+    decrypt(n, b)
+    //cipher()
+}
