@@ -19,9 +19,11 @@ object fibonacci extends App{
         return str
     }
 
-    //def cipher(n:Int):String= {}
+    def cipher(n:Int, a:String)={
+        decrypt(n, encrypt(n, a))
+    }
 
-    val b = encrypt(n, a)
-    decrypt(n, b)
-    //cipher()
+    // val b = encrypt(n, a)
+    // decrypt(n, b)
+    cipher(n, a)
 }
